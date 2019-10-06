@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>List Reorder</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-reorder-group [disabled]="false" (ionItemReorder)="reorder($event)">
+      <ion-item *ngFor="let superheroe of superheroes">
+        <ion-label>
+          {{superheroe}}
+        </ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+    </ion-reorder-group>
+
+  </ion-list>
+</ion-content>
