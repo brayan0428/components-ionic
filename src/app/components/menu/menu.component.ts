@@ -1,15 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { Componente } from '../../interfaces/interfaces';
 import { Observable } from 'rxjs';
+import { Componente } from 'src/app/interfaces/interfaces';
 import { DataService } from '../../services/data.service';
 
 @Component({
-  selector: 'app-inicio',
-  templateUrl: './inicio.page.html',
-  styleUrls: ['./inicio.page.scss'],
+  selector: 'app-menu',
+  templateUrl: './menu.component.html',
+  styleUrls: ['./menu.component.scss'],
 })
-export class InicioPage implements OnInit {
-  componentes: Observable<Componente>;
+
+export class MenuComponent implements OnInit {
+  componentes:Observable<Componente>;
 
   constructor(private dataService:DataService) { }
 
