@@ -9,6 +9,7 @@ export class FiltroPipe implements PipeTransform {
     if(texto === ''){
       return arreglo
     }
+    console.log(texto)
     texto = texto.toLowerCase()
     return arreglo.filter(item => {
       return item[columna].toLowerCase().includes(texto)
