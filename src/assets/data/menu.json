@@ -64,9 +64,14 @@
       "name": "List Reorder",
       "redirectTo": "/list-reorder"
     },
-        {
+    {
       "icon": "refresh",
       "name": "Loading",
       "redirectTo": "/loading"
+    },
+    {
+      "icon": "car",
+      "name": "Modal",
+      "redirectTo": "/modal"
     }
   ]

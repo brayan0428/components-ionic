@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{nombre}} - {{pais}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-button expand="full" (click)="cerrarModalSinArgumentos()">
+    Cerrar sin Argumentos
+  </ion-button>
+
+  <ion-button expand="full" (click)="cerrarModalConArgumentos()" color="secondary">
+      Cerrar Con Argumentos
+    </ion-button>
+</ion-content>
